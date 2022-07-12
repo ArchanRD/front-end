@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+.container{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    height: 60px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav .nav-img{
+    width: 140px;
+}
+
+.search-main{
+    background-color: #efefef;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.search{
+    border: none;
+    background-color: #efefef;
+}
+
+input[type="search"]{
+    font-size: 16px;
+}
+
+.search:focus{
+    outline: none;
+}
+
+nav .icons{
+    font-size: 22px;
+}
+
+nav .icons .icon-main{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav .icons .profile-img{
+    width: 50px;
+    border-radius: 80px;
+    object-fit: cover;
+
+}
+
+.main-container{
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.col-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    align-items: center;
+    margin: auto 15px;
+    cursor: pointer;
+}
+
+.story-container{
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    margin: auto 15px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.story-container .profile-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+    border: 2px solid orangered;
+    padding: 2px;
+    object-fit: cover;
+}
+
+.posts{
+    width: 500px;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.post-main{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 3px 0;
+    background-color: white;
+    width: 500px;
+}
+
+.post-body .post-image{
+    width: 100%;
+    height: auto;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    margin: 8px 10px;
+}
+
+.post-header .post-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    padding: 3px;
+    border: 1px solid orangered;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.post-header .header-text .post-username{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.post-header .header-text .post-location{
+    font-size: 14px;
+}
+
+.post-main .post-body .post-icons i{
+    font-size: 25px;
+    margin: 5px 7px;
+    cursor: pointer;
+}
+
+.post-main .post-body .post-caption{
+    font-size: 16px;
+    margin: 5px 7px;
+}
+
+.post-main .post-body .post-caption b{
+    margin-right: 5px;
+}
+
+.light-txt{
+    color: rgb(136 136 136);
+    cursor: pointer;
+}
+
+.post-main .post-body .comment{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    padding: 12px 15px;
+}
+
+.post-main .post-body .comment input{
+    border: none;
+    outline: none;
+    width: 100%;    
+}
+
+.post-main .post-body .comment a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(0, 0, 243);
+}
+
+input[type="text"]{
+    font-size: 17px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    width: 370px;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profile .profile-photo{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.profile .profile-details h4{
+    margin: 2px 15px;
+    font-weight: 700;
+}
+
+.profile .profile-details p{
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.profile .switch a{
+    color: blue;
+    text-decoration: none;
+}
+
+.profile .switch{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.suggestions .heading{
+    color: rgb(142, 142, 142);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.suggestions .accounts {
+    margin: 10px 0;
+}
+
+.suggestions .accounts .account{
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin: 5px 0;
+}
+
+.suggestions .accounts .account .account-image{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 80px;
+    margin: 5px;
+}
+
+.suggestions .accounts .account .account-details {
+    margin: 0 5px;
+    width: 200px;
+}
+
+.suggestions .accounts .account .account-details p{
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.suggestions .accounts .account a{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: blue;
+    text-decoration: none;
+}
