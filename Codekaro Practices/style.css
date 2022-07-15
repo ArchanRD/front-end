@@ -13,8 +13,13 @@
     font-family: 'Poppins';
     position: absolute;
     color: white;
-    top: 25%;
-    left: 32%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid;
+    height: 31vh;
 }
 
 .top-heading{
@@ -67,19 +72,9 @@
     cursor: pointer;
 }
 
-@media(max-width: 1200px){
-    .header h1{
-        left: 23%;
-    }
-}
-
 @media(max-width: 992px){
     .card{
         flex-grow: 1;
-    }
-
-    .header h1{
-        display: none;
     }
 }
 
@@ -98,6 +93,10 @@
         max-width: 500px;
         margin: 10px auto;
     }
+
+    .header h1{
+        font-size: 60px;
+    }
 }
 
 @media(max-width: 576px){
@@ -109,5 +108,15 @@
         font-size: 35px;
         margin: 10px auto;
         line-height: 1.2;
+    }
+
+    .header h1{
+        font-size: 40px;
+        height: 21vh;
+    }
+
+    .header-img{
+        height: 200px;
+
     }
 }
