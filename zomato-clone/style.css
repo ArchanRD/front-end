@@ -109,7 +109,8 @@
 .search-container .search .search-field{
     display: flex;
     align-items: center;
-    margin: auto 10px
+    margin: auto 10px;
+    overflow: hidden;
 }
 
 .container-eat-method{
@@ -235,12 +236,13 @@
     border: 1px solid rgb(233, 233, 233);
     border-radius: 8px;
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
     cursor: pointer;
-    box-shadow: 0 2px 3px rgb(0 0 0 / 6%);
+    box-shadow: 0 0px 3px rgb(0 0 0 / 6%);
 }
 
 .popular-localilties-container .mini-card:hover{
@@ -268,7 +270,7 @@
 }
 
 .download-container{
-    background-color: rgb(255, 249, 235);
+    background-color: rgb(255 252 246);
     height: 600px;
     display: flex;
     flex-basis: 50%;
@@ -358,4 +360,184 @@ input[type="text"]{
     color: #383838;
     border-radius: 8px;
     box-shadow: 0 1px 5px #00000008;
+}
+
+@media(max-width: 992px){
+
+    .banner .banner-content .nav a {
+        font-size: 15px;
+    }
+
+    .branding .logo{
+        width: 250px;
+    }
+
+    .search-container h1{
+        font-size: 30px;
+    }
+
+    .search-container .search .location{
+        width: 30%;
+    }
+
+    .container-collection .collection-title, .collection-desc{
+        margin-left: 15px;
+    }
+
+    .popular-localilties-container .title {
+        margin-left: 15px;
+    }
+
+    .explore-container h1{
+        margin-left: 15px;
+    }
+
+    .explore-container .strip{
+        width: 96%;
+    }
+
+    .download-container .col-1 .app-img{
+        width: 250px;
+    }
+
+    .download-container .col-2 button{
+        padding: 14px 15px;
+        font-size: 16px;
+    }
+
+    .container-collection .card .collection-card-img{
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 767px){
+    .banner .banner-content .nav a{
+        display: none;
+    }
+
+    .search-container .search{
+        width: 510px;
+    }
+
+    .search-container h1{
+        font-size: 23px;
+    }
+
+    .popular-localilties-container .mini-card{
+        width: 240px;
+    }
+
+    .download-container{
+        flex-direction: column;
+    }
+
+    .download-container .col-2{
+        text-align:center;
+    }
+
+    .download-container .col-2 .flex{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 576px){
+
+    .banner .banner-img{
+        height: 400px;
+    }
+    .branding .logo{
+        width: 245px;
+    }
+
+    .search-container .search{
+        width: 335px;
+        margin: auto;
+    }
+
+    .search-container h1{
+        text-align: center;
+        font-size: 21px;
+    }
+
+    input[type="text"]{
+        font-size: 12px;
+    }
+
+    input[type="search"]{
+        font-size: 12px;
+    }
+    
+    .container-eat-method{
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    .container-eat-method .card{
+        margin: 10px 5px;
+    }
+
+    .container-collection .collection-desc{
+        font-size: 15px;
+    }
+
+    .container-collection-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-collection .card{
+        flex-grow: 1;
+    }
+
+    .popular-localilties-container .title{
+        font-size: 20px;
+        margin: 10px 24px;
+    }
+
+    .popular-localilties-container .mini-card{
+        margin: 10px 25px;
+    }
+
+    .download-container{
+        justify-content: start;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .download-container .col-1 .app-img{
+        display: none;
+    }
+
+    .download-container .col-2 h1{
+        font-size: 33px;
+    }
+
+    .download-container .col-2 .flex{
+        flex-direction: column;
+    }
+
+    .download-container .col-2 button{
+        margin: 10px auto;
+    }
+
+    .download-container .col-2 input{
+        margin: 0;
+        width: 100%;
+    }
+
+    .explore-container h1{
+        font-size: 24px
+    }
+
+    .explore-container .strip{
+        width: 92%;
+    }
+
+    .popular-localilties-container .mini-card .mini-card-details .heading{
+        font-size: 16px;
+    }
+
+    .popular-localilties-container .mini-card .mini-card-details .desc{
+        font-size: 13px;
+    }
 }
